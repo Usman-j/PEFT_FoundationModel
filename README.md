@@ -22,7 +22,7 @@ Two different configurations of LoRA were analyzed by changing the rank because 
 The [conda environment file](./GenAI.yml) is provided for installing the relevant packages needed to run the [notebook](./LightweightFineTuning.ipynb).
 
 ### Observations
-- For both LoRA configurations, validation loss starts to increase after 2 epochs ('test' split was utilized for validation as imdb dataset doesn't include a dedicated validation split).
+- For both LoRA configurations, validation loss starts to increase after 2 epochs ('test' split was utilized for validation).
 - Evaluation accuracy on the test dataset is slightly different upon loading the fine-tuned model weights as compared to evaluation performed via trainer right after fine-tuning. In the table above, the metrics obtained after performing inference on loaded model weights are provided.
 - Seed was set prior to initializing the base model to make the training reproducible.
 
